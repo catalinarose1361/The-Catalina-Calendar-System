@@ -18,29 +18,102 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Work Day Scheduler</title>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">The Catalina Calendar System</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
         <!-- Timeblocks go here -->
-        <div clas="row" id="9am"></div>
-        <div clas="row" id="10am"></div>
-        <div clas="row" id="11am"></div>
-        <div clas="row" id="12pm"></div>
-        <div clas="row" id="1pm"></div>
-        <div clas="row" id="2pm"></div>
-        <div clas="row" id="3pm"></div>
-        <div clas="row" id="4pm"></div>
+        <div class="row" id="9am">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="10am">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="11am">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="12pm">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="1pm">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="2pm">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="3pm">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
+        <div class="row" id="4pm">
+          <div class="col-8">
+            <form>
+              <input type="text">
+            </form>
+          </div>
+          <div class="col-4">
+            <button class="saveButton">Save</button>
+          </div>
+        </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="assets/jquery/function.js"></script>
+    <script src="https://unpkg.com/moment"/></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
 </html>
