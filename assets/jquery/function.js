@@ -1,13 +1,13 @@
 $(document).ready(function(){
-    
-    var dateTime = moment().format("MM-DD-YYYY");
-    $("#currentDay").append(dateTime);
-    
-    // $(".saveButton").click(function(){
-    //     $("input").value();
-    // })
-    
-    // console.log("date is" + dateTime);
+    // current date and time variables updated using moment.js
+    var date = moment().format("MM-DD-YYYY");
+    var time = moment().format('LT');
+
+    // displays date and time on the application by appending to p tags in header
+    $("#currentDay").append(date);
+    $("#currentTime").append(time);
+    console.log(time);
+  
     $(".saveButton").on("click", function(e) {
         e.preventDefault();
         var myText = $("#myText").val();
@@ -17,6 +17,8 @@ $(document).ready(function(){
     });
     var savedInfo = localStorage.getItem("input");
     $("#myText").append(savedInfo);
+
+    
 });
 // if the time slot has passed them the time slot will be gray
 // if the time slot is current the time slot will be red
