@@ -10,7 +10,7 @@ $(document).ready(function() {
    
 
     // // sets a default background color for time slots
-    // $(".time-block").css("background-color", "#77dd77");
+    // $(".time-block").css("background-color", "#d3d3d3");
     
     $(".time-block").each(function(index, element) {
     
@@ -18,17 +18,20 @@ $(document).ready(function() {
         console.log(hour24);
         
 
-        if (hour24 >= $(this).attr("id")) {
-            $(this).toggleClass("past");
-        } else if (hour24 <= $(this).attr("id")) {
-            $(this).toggleClass("future");
-            
-        } else {
-            $(this).toggleClass("present");
+        if (hour24 === $(this).attr("id")) {
 
+            // $(this).removeClass ("future");
+            $(this).addClass("present");
+        } else if (hour24 > $(this).attr("id")) {
+            // $(this).removeClass ("present");
+            $(this).addClass("past");
+            
+        } else if (hour24 < $(this).attr("id")) {
+            $(this).addClass("future");
+            
 
         }
-        console.log(this);
+        console.log($("#9"))
     });
     
 
