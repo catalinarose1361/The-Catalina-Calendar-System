@@ -30,7 +30,17 @@ $(document).ready(function() {
         console.log($("#9"))
     });
     
-
+    $(".saveButton").on("click", function(e) {
+        e.preventDefault();
+        var input = $(this).attr("id");
+        var myText = $(".myText").val();
+     
+        localStorage.setItem(input, myText);
+    });
+    var savedInfo10 = localStorage.getItem("10");
+    $("#10text").append(savedInfo10);
+    var savedInfo11 = localStorage.getItem("11");
+    $("#11text").append(savedInfo11);
    
 });
 
