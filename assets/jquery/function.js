@@ -6,14 +6,10 @@ $(document).ready(function() {
     // // displays date and time on the application by appending to p tags in header
     $("#currentDay").append(date);
     $("#currentTime").append(time);
-
-   
-
-    // // sets a default background color for time slots
-    // $(".time-block").css("background-color", "#d3d3d3");
-    
+    // function to change the colors of the tivs based on time 
     $(".time-block").each(function(index, element) {
     
+            
         var hour24 = moment().format('HH') // 0-24 format
         console.log(hour24);
         
